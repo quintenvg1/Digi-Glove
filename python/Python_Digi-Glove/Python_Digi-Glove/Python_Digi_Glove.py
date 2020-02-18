@@ -42,5 +42,14 @@ def Undo():
 def Refresh():
     pyautogui.hotkey('F5')
 
+def SelectAll():
+    pyautogui.hotkey('ctrl','a')
+
+def Cut():
+    pyautogui.hotkey('ctrl','x')
+
+def Bold():
+    pyautogui.hotkey('ctrl','b')
+
 PrintScreen()
 CommandPromptSluiten()
