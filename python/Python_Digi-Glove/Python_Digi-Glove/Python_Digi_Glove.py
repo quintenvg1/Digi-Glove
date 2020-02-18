@@ -8,25 +8,36 @@ class POINT(Structure):
 
 
 
-def Rechtermuisklik():
+def RightMouseClick():
     pt = POINT()
     windll.user32.GetCursorPos(byref(pt))
     pyautogui.rightClick(x=pt.x, y=pt.y)
 
-def PaginaSluiten():
+def LeftMouseClick():
+    pt = POINT()
+    windll.user32.GetCursorPos(byref(pt))
+    pyautogui.Click(x=pt.x, y=pt.y)
+
+def ClosePage():
     pyautogui.hotkey('ctrl', 'w')  
 
-def Kopiëren():
+def Copy():
     pyautogui.hotkey('ctrl', 'c')  
 
-def Plakken():
+def Paste():
     pyautogui.hotkey('ctrl', 'v')
 
 def PrintScreen():
     pyautogui.hotkey('ctrl', 'PrtSc') 
 
-def CommandPromptSluiten():
+def CloseCommandPrompt():
     pyautogui.hotkey("esc")
+
+def Save():
+    pyautogui.hotkey('ctrl','s')
+
+def Undo():
+    pyautogui.hotkey('ctrl','z')
 
 PrintScreen()
 CommandPromptSluiten()
