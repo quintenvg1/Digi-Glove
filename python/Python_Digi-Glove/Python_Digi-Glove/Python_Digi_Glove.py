@@ -39,5 +39,8 @@ def Save():
 def Undo():
     pyautogui.hotkey('ctrl','z')
 
+def Refresh():
+    pyautogui.hotkey('F5')
+
 PrintScreen()
 CommandPromptSluiten()
