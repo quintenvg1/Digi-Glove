@@ -1,4 +1,4 @@
-
+#!/usr/bin/python3.8
 from ctypes import windll, Structure, c_long, byref
 import pyautogui
 
