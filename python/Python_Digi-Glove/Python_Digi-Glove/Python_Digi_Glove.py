@@ -25,4 +25,8 @@ def Plakken():
 def PrintScreen():
     pyautogui.hotkey('ctrl', 'PrtSc') 
 
+def CommandPromptSluiten():
+    pyautogui.hotkey("esc")
+
 PrintScreen()
+CommandPromptSluiten()
