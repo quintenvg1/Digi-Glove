@@ -52,4 +52,4 @@ def Bold():
     pyautogui.hotkey('ctrl','b')
 
 PrintScreen()
-CommandPromptSluiten()
+CloseCommandPrompt()
